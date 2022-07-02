@@ -1,7 +1,7 @@
 # AnalysisForMusicMarket
 Making gragh program
 
-#概要
+#概要\n
 データフレームに入力したデータをグラフ化するプログラム
 
 ##詳細の説明
