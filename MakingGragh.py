@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#MakingCsvで作成したcsvデータの読み込み
+#MakingCsv.pyで作成したcsvデータの読み込み
 df_Segments=pd.read_csv(f'/Users/katuy/Desktop/data/Japan_Revenue.csv',encoding="shift-jis")
 
 # === グラフ描画：開始 ================================================
