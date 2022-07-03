@@ -22,8 +22,6 @@ Flow_TotalRevenue=[]
 #トータル収益を算出しdataframe列に加える
 for l in range(0,10):
     Total.append(df_Segments.at[2012+l,'TotalPhysical']+df_Segments.at[2012+l,'Streaming']+df_Segments.at[2012+l,'DownloadsAndOtherdigitals'])
-
-#totalrevenue列を加える
 df_Segments["TotalRevenue"] = Total
 
 #各セグメントの成長性(前年比率)を計算
