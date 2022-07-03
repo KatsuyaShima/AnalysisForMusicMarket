@@ -46,7 +46,7 @@ ax.plot(x4, y4, color=c4)#, label=l3)
 plt.xticks([0,1,2,3,4,5,6,7,8,9], [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021])
 plt.xticks(rotation=90)
 
-plt.savefig('/Users/katuy/Desktop/'+str("Revenue_Global")+'.png') # 画像の保存
+plt.savefig('/Users/katuy/Desktop/'+str("Japan_Revenue")+'.png') # 画像の保存
 plt.clf()
 plt.close(fig)
 # === グラフ描画：終了 ===============================================
