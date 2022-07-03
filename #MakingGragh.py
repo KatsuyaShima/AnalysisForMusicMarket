@@ -22,10 +22,9 @@ y2 = df_Segments['TotalPhysical'].values
 x3 = df_Segments.index.tolist()
 y3 = df_Segments['Streaming'].values
 x4 = df_Segments.index.tolist()
-y4 = df_Segments['DownloadsAndOtherDigitals'].values
+y4 = df_Segments['Downloads'].values
 
 c1,c2,c3,c4 = "#03AF7A","#4DC4FF","#F6AA00","#AA4499" # 各プロットの色
-#l1,l2,l3 = "TotalRevenue","Physicals","Streaming & Other digitals"   # 各ラベル
 
 #ax.set_title('Japanese Recorded Music Industry Revenues 2005-2025') # グラフタイトル
 #ax.set_xlabel('Years')  # x軸ラベル
