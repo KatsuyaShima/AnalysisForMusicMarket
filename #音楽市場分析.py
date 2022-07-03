@@ -12,7 +12,7 @@ df_Segments=pd.DataFrame({'TotalPhysical':[3108,2705,2542,2544,2457,2320,2403,22
                           'DownloadsAndOtherdigitals':[533,386,359,347,329,310,296,241,193,151]},
                            index=[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021])
 
-#リストの下準備
+#リストの準備
 Total=[]
 Flow_TotalPhysical=[]
 Flow_Streaming=[]
