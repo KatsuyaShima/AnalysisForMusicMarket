@@ -16,8 +16,8 @@ df_Segments=pd.DataFrame({'TotalPhysical':[3108,2705,2542,2544,2457,2320,2403,22
 Total=[]
 Flow_TotalPhysical=[]
 Flow_Streaming=[]
-Flow_TotalRevenue=[]
 Flow_Downloads=[]
+Flow_TotalRevenue=[]
 
 #トータル収益を算出しdataframe列に加える
 for l in range(0,10):
