@@ -36,7 +36,7 @@ ax.plot(x2, y2, color=c2)
 ax.plot(x3, y3, color=c3)
 ax.plot(x4, y4, color=c4)
 
-#x軸ラベル要素数と実体
+#x軸ラベル要素数と表記
 plt.xticks([0,1,2,3,4,5,6,7,8,9], [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021])
 plt.xticks(rotation=90)
 
