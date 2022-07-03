@@ -26,7 +26,7 @@ for l in range(0,10):
 #totalrevenue列を加える
 df_Segments["TotalRevenue"] = Total
 
-#成長性(前年比率)を考える
+#成長性(前年比率)を計算
 for l in range(0,9):
     if df_Segments.at[2013+l,'TotalPhysical']!=0:
         Flow_TotalPhysical.append(round(((df_Segments.at[2013+l,'TotalPhysical']/df_Segments.at[2013+l-1,'TotalPhysical']-1)*100),2))
