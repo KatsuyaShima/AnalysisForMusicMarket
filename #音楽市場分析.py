@@ -52,6 +52,6 @@ df_flow=pd.DataFrame(data_list1,
                     index=['TotalPhysical','Streaming','DownloadsAndOtherdigitals','TotalRevenue'])
 df_flow=df_flow.transpose()
 
-#csvへ出力
+#csv形式で出力
 df_df_Segments.to_csv(f'/Users/katuy/Desktop/data/Japan_Revenue.csv',encoding="shift-jis")
 df_flow.to_csv(f'/Users/katuy/Desktop/data/Japan_Flow.csv',encoding="shift-jis")
