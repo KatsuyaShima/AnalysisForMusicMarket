@@ -17,7 +17,7 @@ Total=[]
 Flow_TotalPhysical=[]
 Flow_Streaming=[]
 Flow_TotalRevenue=[]
-Flow_DownloadsAndOtherdigitals=[]
+Flow_Downloads=[]
 
 #トータル収益を算出しdataframe列に加える
 for l in range(0,10):
@@ -37,15 +37,15 @@ for l in range(0,9):
     else:
         Flow_Streaming.append(0)
     if df_Segments.at[2013+l,'DownloadsAndOtherdigitals']!=0:
-        Flow_DownloadsAndOtherdigitals.append(round(((df_Segments.at[2013+l,'DownloadsAndOtherdigitals']/df_Segments.at[2013+l-1,'DownloadsAndOtherdigitals']-1)*100),2))
+        Flow_Downloads.append(round(((df_Segments.at[2013+l,'DownloadsAndOtherdigitals']/df_Segments.at[2013+l-1,'DownloadsAndOtherdigitals']-1)*100),2))
     else:
-        Flow_DownloadsAndOtherdigitals.append(0)
+        Flow_Downloads.append(0)
     if df_Segments.at[2013+l,'TotalRevenue']!=0:
         Flow_TotalRevenue.append(round(((df_Segments.at[2013+l,'TotalRevenue']/df_Segments.at[2013+l-1,'TotalRevenue']-1)*100),2))
     else:
         Flow_TotalRevenue.append(0)
     
-data_list1=[Flow_TotalPhysical,Flow_Streaming,Flow_DownloadsAndOtherdigitals,Flow_TotalRevenue]
+data_list1=[Flow_TotalPhysical,Flow_Streaming,Flow_Downloads,Flow_TotalRevenue]
 
 #計算した成長率(フロー)を別のdataframeに格納し、配置を変更する
 df_flow=pd.DataFrame(data_list1,
