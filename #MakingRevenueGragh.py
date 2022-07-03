@@ -9,7 +9,7 @@ import numpy as np
 from pyparsing import col
 
 #音楽市場分析で作成したcsvデータの読み込み
-df_Segments=pd.read_csv(f'/Users/katuy/Desktop/data/Global_Revenue.csv',encoding="shift-jis")
+df_Segments=pd.read_csv(f'/Users/katuy/Desktop/data/Japan_Revenue.csv',encoding="shift-jis")
 
 # === グラフ描画：開始 ================================================
 fig, ax = plt.subplots()
