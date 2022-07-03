@@ -9,20 +9,20 @@ import numpy as np
 from pyparsing import col
 
 #音楽市場分析で作成したcsvデータの読み込み
-df_5guys=pd.read_csv(f'/Users/katuy/Desktop/data/Global_Revenue.csv',encoding="shift-jis")
+df_Segments=pd.read_csv(f'/Users/katuy/Desktop/data/Global_Revenue.csv',encoding="shift-jis")
 
 # === グラフ描画：開始 ================================================
 fig, ax = plt.subplots()
 plt.vlines(9, 0, 5000, colors='black', linestyle='dashed', linewidth=3)
 
-x1 = df_5guys.index.tolist()
-y1 = df_5guys['TotalRevenue'].values
-x2 = df_5guys.index.tolist()
-y2 = df_5guys['TotalPhysical'].values
-x3 = df_5guys.index.tolist()
-y3 = df_5guys['Streaming'].values
-x4 = df_5guys.index.tolist()
-y4 = df_5guys['DownloadsAndOtherDigitals'].values
+x1 = df_Segments.index.tolist()
+y1 = df_Segments['TotalRevenue'].values
+x2 = df_Segments.index.tolist()
+y2 = df_Segments['TotalPhysical'].values
+x3 = df_Segments.index.tolist()
+y3 = df_Segments['Streaming'].values
+x4 = df_Segments.index.tolist()
+y4 = df_Segments['DownloadsAndOtherDigitals'].values
 
 c1,c2,c3,c4 = "#03AF7A","#4DC4FF","#F6AA00","#AA4499" # 各プロットの色
 #l1,l2,l3 = "TotalRevenue","Physicals","Streaming & Other digitals"   # 各ラベル
