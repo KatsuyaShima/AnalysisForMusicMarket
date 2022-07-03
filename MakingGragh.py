@@ -1,7 +1,6 @@
 #グラフ作成
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 
 #音楽市場分析で作成したcsvデータの読み込み
 df_Segments=pd.read_csv(f'/Users/katuy/Desktop/data/Japan_Revenue.csv',encoding="shift-jis")
