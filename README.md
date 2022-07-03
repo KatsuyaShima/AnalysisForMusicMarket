@@ -1,5 +1,6 @@
 # AnalysisForMusicMarket
-Making gragh program
+音楽市場分析.py
+MakingGragh.py
 
 #概要<br>
 グラフを描画するプログラム
