@@ -6,7 +6,7 @@ from datetime import datetime as dt
 import numpy as np
 from pyparsing import col
 
-#データ量が少ないので、手作業でデータフレームを作成する。
+#計算した値を元にデータフレームを作成
 df_5guys=pd.DataFrame({'TotalPhysical':[7.6,6.8,6.0,5.8,5.6,5.2,4.7,4.5,4.3,5.0],
                  'Streaming':[1.0,1.4,1.9,2.8,4.7,6.6,9.3,11.4,13.6,16.9],
                  'DownloadsAndOtherDigitals':[4.4,4.4,4.0,3.8,3.2,2.6,1.7,1.5,1.2,1.1],
