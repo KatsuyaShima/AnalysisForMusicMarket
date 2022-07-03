@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-#与えられたグラフを元にdataframeを作成(日本)
+#与えられたグラフを元にdataframeを作成
 df_Segments=pd.DataFrame({'TotalPhysical':[3108,2705,2542,2544,2457,2320,2403,2291,1944,1936],
                           'Streaming':[10,31,79,124,200,263,349,465,589,744],
                           'Downloads':[533,386,359,347,329,310,296,241,193,151]},
