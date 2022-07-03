@@ -1,4 +1,4 @@
-#音楽市場分析_Japan
+#音楽市場分析_日本
 import pandas as pd
 import numpy as np
 
