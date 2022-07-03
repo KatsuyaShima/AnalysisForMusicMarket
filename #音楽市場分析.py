@@ -47,7 +47,7 @@ for l in range(0,9):
     
 data_list1=[Flow_TotalPhysical,Flow_Streaming,Flow_DownloadsAndOtherdigitals,Flow_TotalRevenue]
 
-#計算した成長率を別のdataframeに格納し、配置を変更する
+#計算した成長率(フロー)を別のdataframeに格納し、配置を変更する
 df_flow=pd.DataFrame(data_list1,
                     columns=[2013,2014,2015,2016,2017,2018,2019,2020,2021],
                     index=['TotalPhysical','Streaming','DownloadsAndOtherdigitals','TotalRevenue'])
