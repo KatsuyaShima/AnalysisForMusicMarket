@@ -9,7 +9,7 @@ from pyparsing import col
 #与えられたグラフを元にdataframeを作成(日本)
 df_Segments=pd.DataFrame({'TotalPhysical':[3108,2705,2542,2544,2457,2320,2403,2291,1944,1936],
                           'Streaming':[10,31,79,124,200,263,349,465,589,744],
-                          'DownloadsAndOtherdigitals':[533,386,359,347,329,310,296,241,193,151]},
+                          'Downloads':[533,386,359,347,329,310,296,241,193,151]},
                            index=[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021])
 
 #リストの準備
@@ -37,7 +37,7 @@ for l in range(0,9):
     else:
         Flow_Streaming.append(0)
     if df_Segments.at[2013+l,'DownloadsAndOtherdigitals']!=0:
-        Flow_Downloads.append(round(((df_Segments.at[2013+l,'DownloadsAndOtherdigitals']/df_Segments.at[2013+l-1,'DownloadsAndOtherdigitals']-1)*100),2))
+        Flow_Downloads.append(round(((df_Segments.at[2013+l,'Downloads']/df_Segments.at[2013+l-1,'Downloads']-1)*100),2))
     else:
         Flow_Downloads.append(0)
     if df_Segments.at[2013+l,'TotalRevenue']!=0:
@@ -50,7 +50,7 @@ data_list1=[Flow_TotalPhysical,Flow_Streaming,Flow_Downloads,Flow_TotalRevenue]
 #計算した成長率(フロー)を別のdataframeに格納し、配置を変更する
 df_flow=pd.DataFrame(data_list1,
                     columns=[2013,2014,2015,2016,2017,2018,2019,2020,2021],
-                    index=['TotalPhysical','Streaming','DownloadsAndOtherdigitals','TotalRevenue'])
+                    index=['TotalPhysical','Streaming','Downloads','TotalRevenue'])
 df_flow=df_flow.transpose()
 
 #csv形式で出力
