@@ -1,7 +1,7 @@
 # AnalysisForMusicMarket
 Making gragh program
 
-#概要<br>
+##概要<br>
 グラフを描画するプログラム
 
 ##詳細の説明<br>
