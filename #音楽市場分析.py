@@ -6,7 +6,7 @@ from datetime import datetime as dt
 import numpy as np
 from pyparsing import col
 
-#計算した値を元にデータフレームを作成
+#計算した値を元にデータフレームを作成(日本)
 df_5guys=pd.DataFrame({'TotalPhysical':[3108,2705,2542,2544,2457,2320,2403,2291,1944,1936,1910,1885,1860,1835],
                  'Streaming':[10,31,79,124,200,263,349,465,589,744,1008,1366,1851,2508],
                  'DownloadsAndOtherdigitals':[533,386,359,347,329,310,296,241,193,151,130,112,96,83]},
